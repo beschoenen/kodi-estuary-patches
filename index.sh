@@ -33,7 +33,7 @@ echo "Applying patches"
 for FILE in "$PWD"/patches/*.patch
 do
   echo "Applying $FILE"
-  git -C kodi apply "$FILE"
+  git -C kodi apply "$FILE" || exit 1
 done
 
 SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
