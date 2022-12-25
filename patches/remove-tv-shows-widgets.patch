@@ -1,10 +1,10 @@
 diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
-index f90d63470b..b514843bad 100644
+index 5b9f2fbf57..44b26b7b98 100644
 --- a/addons/skin.estuary/xml/Home.xml
 +++ b/addons/skin.estuary/xml/Home.xml
-@@ -144,22 +144,6 @@
- 							<param name="widget_target" value="videos"/>
- 							<param name="list_id" value="6300"/>
+@@ -150,22 +150,6 @@
+ 							<param name="onclick_condition" value="true"/>
+ 							<param name="onclick_action" value="$VAR[TVShowOnClickActionVar]"/>
  						</include>
 -						<include content="WidgetListCategories" condition="Library.HasContent(tvshows)">
 -							<param name="content_path" value="videodb://tvshows/genres/"/>
