@@ -1,0 +1,34 @@
+diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
+index 5b9f2fbf57..e40cbadb33 100644
+--- a/addons/skin.estuary/xml/Home.xml
++++ b/addons/skin.estuary/xml/Home.xml
+@@ -948,6 +948,14 @@
+ 							<property name="id">music</property>
+ 							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+ 						</item>
++						<item>
++							<label>$LOCALIZE[3]</label>
++							<onclick>ActivateWindow(Videos,root)</onclick>
++							<property name="menu_id">$NUMBER[11000]</property>
++							<thumb>icons/sidemenu/videos.png</thumb>
++							<property name="id">video</property>
++							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
++						</item>
+ 						<item>
+ 							<label>$LOCALIZE[427]</label>
+ 							<onclick>PlayDisc</onclick>
+@@ -1004,14 +1012,6 @@
+ 							<property name="id">pictures</property>
+ 							<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+ 						</item>
+-						<item>
+-							<label>$LOCALIZE[3]</label>
+-							<onclick>ActivateWindow(Videos,root)</onclick>
+-							<property name="menu_id">$NUMBER[11000]</property>
+-							<thumb>icons/sidemenu/videos.png</thumb>
+-							<property name="id">video</property>
+-							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+-						</item>
+ 						<item>
+ 							<label>$LOCALIZE[10134]</label>
+ 							<onclick>ActivateWindow(favouritesbrowser)</onclick>

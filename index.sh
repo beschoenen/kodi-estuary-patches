@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-RELEASE="19.4-Matrix";
+RELEASE="20.1-Nexus";
 
 while getopts "h?r:" opt; do
   case "$opt" in
