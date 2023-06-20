@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 
+set -eux;
+
 RELEASE="20.1-Nexus";
+SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
 
 while getopts "h?r:" opt; do
   case "$opt" in
@@ -35,8 +38,6 @@ do
   echo "Applying $FILE"
   git -C kodi apply "$FILE" || exit 1
 done
-
-SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
 
 adb shell rm -r $SKIN_LOCATION
 
