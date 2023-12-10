@@ -2,7 +2,7 @@
 
 set -eux;
 
-RELEASE="20.1-Nexus";
+RELEASE="21.0b2-Omega";
 SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
 
 while getopts "h?r:" opt; do
