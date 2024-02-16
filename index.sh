@@ -2,7 +2,7 @@
 
 set -eux;
 
-RELEASE="21.0b2-Omega";
+RELEASE="21.0b3-Omega";
 SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
 
 while getopts "h?r:" opt; do
@@ -39,7 +39,7 @@ do
   git -C kodi apply "$FILE" || exit 1
 done
 
-adb shell rm -r $SKIN_LOCATION
+adb shell rm -r $SKIN_LOCATION || true
 
 echo "Uploading files"
 adb push "$PWD"/kodi/addons/skin.estuary $SKIN_LOCATION
