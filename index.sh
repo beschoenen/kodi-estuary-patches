@@ -2,15 +2,18 @@
 
 set -eux;
 
-RELEASE="21.0b3-Omega";
+TEST=false
+RELEASE="21.0rc1-Omega";
 SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
 
-while getopts "h?r:" opt; do
+while getopts "h?t?r:" opt; do
   case "$opt" in
     h|\?)
       exit 0
       ;;
     r) RELEASE=$OPTARG
+      ;;
+    t) TEST=true
       ;;
   esac
 done
@@ -38,6 +41,11 @@ do
   echo "Applying $FILE"
   git -C kodi apply "$FILE" || exit 1
 done
+
+if [ "$TEST" = true ]; then
+  echo "Not uploading to device"
+  exit 0
+fi
 
 adb shell rm -r $SKIN_LOCATION || true
 
