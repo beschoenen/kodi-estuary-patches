@@ -3,7 +3,7 @@
 set -eux;
 
 TEST=false
-RELEASE="21.0-Omega";
+RELEASE="21.1-Omega";
 SKIN_LOCATION="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/skin.estuary"
 
 while getopts "h?t?r:" opt; do
