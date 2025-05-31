@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-set -eux;
+set -eu;
 
 TEST=false
 RELEASE="21.2-Omega";

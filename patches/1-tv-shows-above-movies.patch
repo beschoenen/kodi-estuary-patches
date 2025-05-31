@@ -1,8 +1,8 @@
 diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
-index 5b9f2fbf57..6667019bd5 100644
+index 3cd090d7a1..092291b4ec 100644
 --- a/addons/skin.estuary/xml/Home.xml
 +++ b/addons/skin.estuary/xml/Home.xml
-@@ -918,17 +918,6 @@
+@@ -933,17 +933,6 @@
  						</control>
  					</itemlayout>
  					<content>
@@ -20,7 +20,7 @@ index 5b9f2fbf57..6667019bd5 100644
  						<item>
  							<label>$LOCALIZE[20343]</label>
  							<onclick condition="Library.HasContent(tvshows) + Skin.HasSetting(home_no_categories_widget) + !System.GetBool(myvideos.flatten)">ActivateWindow(Videos,videodb://tvshows/,return)</onclick>
-@@ -940,6 +929,17 @@
+@@ -955,6 +944,17 @@
  							<property name="id">tvshows</property>
  							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
  						</item>

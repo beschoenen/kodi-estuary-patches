@@ -1,8 +1,8 @@
 diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
-index 5b9f2fbf57..44b26b7b98 100644
+index 77c0450de5..08c1e91003 100644
 --- a/addons/skin.estuary/xml/Home.xml
 +++ b/addons/skin.estuary/xml/Home.xml
-@@ -150,22 +150,6 @@
+@@ -151,22 +151,6 @@
  							<param name="onclick_condition" value="true"/>
  							<param name="onclick_action" value="$VAR[TVShowOnClickActionVar]"/>
  						</include>

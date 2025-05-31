@@ -1,10 +1,10 @@
 diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
-index 5b9f2fbf57..e40cbadb33 100644
+index d575aad3bd..6d1d87359c 100644
 --- a/addons/skin.estuary/xml/Home.xml
 +++ b/addons/skin.estuary/xml/Home.xml
-@@ -948,6 +948,14 @@
- 							<property name="id">music</property>
- 							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+@@ -958,6 +958,14 @@
+ 							<property name="id">radio</property>
+ 							<visible>!Skin.HasSetting(HomeMenuNoRadioButton)</visible>
  						</item>
 +						<item>
 +							<label>$LOCALIZE[3]</label>
@@ -15,9 +15,9 @@ index 5b9f2fbf57..e40cbadb33 100644
 +							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 +						</item>
  						<item>
- 							<label>$LOCALIZE[427]</label>
- 							<onclick>PlayDisc</onclick>
-@@ -1004,14 +1012,6 @@
+ 							<label>$LOCALIZE[15016]</label>
+ 							<property name="menu_id">$NUMBER[17000]</property>
+@@ -982,14 +990,6 @@
  							<property name="id">pictures</property>
  							<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
  						</item>
