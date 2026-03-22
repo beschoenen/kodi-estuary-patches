@@ -1,30 +1,30 @@
 diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
-index 3cd090d7a1..e0d73cd351 100644
+index 25da58c2f5..f422a8b214 100644
 --- a/addons/skin.estuary/xml/Home.xml
 +++ b/addons/skin.estuary/xml/Home.xml
 @@ -127,6 +127,12 @@
  							<param name="widget_target" value="videos"/>
  							<param name="list_id" value="6900"/>
  						</include>
-+						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows)">
++						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_tvshows_recentlyaddedepisodes_widget)">
 +							<param name="content_path" value="special://skin/playlists/recent_unwatched_episodes.xsp"/>
 +							<param name="widget_header" value="$LOCALIZE[20387]"/>
 +							<param name="widget_target" value="videos"/>
 +							<param name="list_id" value="6200"/>
 +						</include>
- 						<include content="WidgetListPoster" condition="Library.HasContent(tvshows)">
+ 						<include content="WidgetListPoster" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_tvshows_inprogress_widget)">
  							<param name="content_path" value="videodb://inprogresstvshows"/>
  							<param name="sortby" value="lastplayed"/>
 @@ -137,12 +143,6 @@
  							<param name="onclick_condition" value="true"/>
  							<param name="onclick_action" value="$VAR[TVShowOnClickActionVar]"/>
  						</include>
--						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows)">
+-						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_tvshows_recentlyaddedepisodes_widget)">
 -							<param name="content_path" value="special://skin/playlists/recent_unwatched_episodes.xsp"/>
 -							<param name="widget_header" value="$LOCALIZE[20387]"/>
 -							<param name="widget_target" value="videos"/>
 -							<param name="list_id" value="6200"/>
 -						</include>
- 						<include content="WidgetListPoster" condition="Library.HasContent(tvshows)">
+ 						<include content="WidgetListPoster" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_tvshows_unwatched_widget)">
  							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
  							<param name="widget_header" value="$LOCALIZE[31122]"/>

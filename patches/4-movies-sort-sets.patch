@@ -1,8 +1,8 @@
 diff --git a/addons/skin.estuary/xml/Home.xml b/addons/skin.estuary/xml/Home.xml
-index 6d1d87359c..adbd66fc5f 100644
+index 25da58c2f5..4355abbc3d 100644
 --- a/addons/skin.estuary/xml/Home.xml
 +++ b/addons/skin.estuary/xml/Home.xml
-@@ -74,7 +74,7 @@
+@@ -95,7 +95,7 @@
  							<param name="content_path" value="videodb://movies/sets/"/>
  							<param name="widget_header" value="$LOCALIZE[31075]"/>
  							<param name="widget_target" value="videos"/>
